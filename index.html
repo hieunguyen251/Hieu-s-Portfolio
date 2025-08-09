@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hieu’s Portfolio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav>
+      <h1>Hieu’s Portfolio</h1>
+      <button id="theme-toggle" aria-label="Toggle dark/light theme">Toggle Theme</button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <!-- Projects loaded dynamically here -->
+      </div>
+    </section>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Hieu. Welcome to my portfolio site built from scratch!</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <label>
+          Name: <input type="text" name="name" required minlength="2" />
+        </label>
+        <label>
+          Email: <input type="email" name="email" required />
+        </label>
+        <label>
+          Message: <textarea name="message" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+        <p id="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hieu</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
